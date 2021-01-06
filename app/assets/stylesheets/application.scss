@@ -1,0 +1,206 @@
+@import 'bootstrap/scss/bootstrap'; 
+
+ body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  .parallax {
+    background-image: url('Background.jpg');
+    height: 100%; 
+    background-attachment: fixed;      /* to enable parrallax */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .text {
+    background-color: white;
+    color: black;
+    font-size: 5vw; 
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 1%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;    /*makes it possible for the cutout*/
+  }                     
+      /*parallax + cut-out info */
+
+  .Title_data{
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+    
+  .container-fluid{
+    padding-top:2%;
+    padding-bottom:7%;
+    height :100%;
+    width:33.33%;
+  }
+      
+  /* For desktop: */    
+  .navbar{
+    background: rgb(250, 250, 250);
+  }
+
+  .thick-green-border {
+    border-color: transparent;
+    border-width: 80%;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .profile-image {
+    width: 85%;
+    border-radius:50%;
+    display: block;
+    margin: 4rem auto auto 4rem;
+    margin-top: 2rem;
+  }
+
+  .info {
+    text-align: center;
+      font-size: 1.75vw;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+
+  .info2 {
+      text-align: center;
+      font-size: 1.75vw;
+      font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  }
+
+  .info_label{
+      text-align: center;
+      font-size: 1.75vw;
+      font-weight: bold;
+  }
+ 
+  .section{
+    width:33.33%;
+  }
+
+  .rsp-break{
+    display:block;
+  }
+
+  .keep-watch{
+    color:brown;
+    font-style: italic;
+    font-size:1.5 rem;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 800px) 
+  {
+
+    .container-fluid{
+      height:120%;
+    }
+
+    .rsp-break{
+      display:none;
+    }
+
+    /*For mobile phones:*/
+    .section {
+      width: 100%;
+    }
+
+    .profile-image {
+      width: 35%;
+      border-radius:50%;
+      display: block;
+      margin-left: 30%;
+    }
+
+    .info{
+      font-size:0.75rem;
+    }
+
+    .info_label{
+      font-size:0.80rem;
+    }
+
+    .navbar{ visibility: hidden; }
+
+    .info2 {
+      font-size:0.75rem;
+    }
+
+    pre{
+      margin-left: 6rem;
+    }
+
+  }
+
+  .contact-details{
+    font-family: Courier, monospace, cursive;
+    color: black;
+    text-align: center;
+    font-size: 2.5vw;
+  }
+
+  
+  .fa1 {
+    font-size: 3vm;
+    width: 10%;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    border-radius:10%;
+    margin: 5% 7% 5% 7%;
+    color:white;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+      text-decoration: none;
+      color: black;
+  }
+      
+  .social-media-links{
+    margin: auto auto auto 5rem;
+    font-size: 2rem;
+  }
+
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 3vm;
+    margin:2rem auto auto auto;
+    margin-bottom: 2rem;
+    font-size:1rem;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }

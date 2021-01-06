@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="application.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Samvita-Resume</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" text-align="center">
+
+  <nav class="navbar navbar-expand navbar-light fixed-bottom">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1"><h5>Home</h5></a>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2"><h5>Profile</h5></a>                             <!--nav bar details-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3"><h5>Contact</h5></a>
+      </li>
+    </ul>
+  </nav>
+  
+  <div class="parallax container-fluid" id="section1">
+      <div class="text">SAMVITA KARKAL</div>                                                  <!--page 1 - name -->
+  </div>
+  
+  <div id="section2" class="container-fluid bg-warning">
+    <h1 class="Title_data">Profile</h1>
+    <hr width="75%">
+      <div class= "row">
+          <div class="col-sm-4">                                                                 <!-- ABOUT ME DIV-->
+            <h4 class="Title_data">ABOUT ME</h4>
+            <p class="info">
+                Hi, I am a web-developer looking forward to mark my presence in the digital world. I like to create sites that are beautiful to watch and use.
+            </p>
+            <p class="info">I like working in a team, you'll learn faster and much more. As the saying goes: 'two heads are better than one'.
+            </p>
+            <p class="info">I like cleanliness, and you can see it in my vicinity and my code. &#128519</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class= "thick-green-border image-fluid">     
+            <%= image_tag('display_image.jpg', 
+            style: 'width: 18em; border-radius:50%; display: block; margin: 0 auto 0 auto;',
+            )%>                                                           <!--PROFILE IMAGE DIV-->
+            </div>
+          </div>
+          
+          <div class="col-sm-4 right">                                                           <!--DETAILS DIV-->
+            <h4 class="Title_data">DETAILS</h4>
+            <br class="rsp-break">
+            <pre>
+              <span class="info_label">Name:</span>
+              <span class="info2">Samvita Karkal</span>
+              <span class="info_label">Location:</span>
+              <span class="info2">Pune, Maharashtra,</span>
+              <span class="info2">India</span> 
+            </pre>
+          </div>
+       </div>
+       <p class="keep-watch">Keep watching this space for updates.</p>
+  </div>
+      
+  <div id="section3" class="container-fluid bg-secondary">
+    <h1 class="Title_data">Contact<hr width="75%"></h1>
+      <div class="col">
+       <br>
+        <H2 class="row contact-details">
+            “We are what we repeatedly do. Excellence, therefore, is not an act but a habit.” – Aristotle
+        </H2>
+
+        <div class="social-media-links">  
+          <a href="https://www.facebook.com/samvita.karkal/" class="fa fa1 fa-facebook"></a>
+          <a href="https://twitter.com/KarkalSamvita" class="fa fa1 fa-twitter"></a>
+          <a href="https://www.linkedin.com/in/samvita-karkal-354628168/" class="fa fa1 fa-linkedin"></a>
+          <a href="https://www.instagram.com/samvitakarkal/" class="fa fa1 fa-instagram"></a>
+        </div>  
+
+        <center><button class="btn"><i class="fa-download fa"></i> Download Resume</button></center>
+      </div>
+  </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
