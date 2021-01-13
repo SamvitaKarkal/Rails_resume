@@ -81,7 +81,8 @@
           <a href="https://www.instagram.com/samvitakarkal/" class="fa fa1 fa-instagram"></a>
         </div>  
 
-        <center><button class="btn"><i class="fa-download fa"></i> Download Resume</button></center>
+        <center><button class="btn" onclick="download()"><i class="fa-download fa"></i>
+        Download Resume</button></center>
       </div>
   </div>
 
@@ -90,6 +91,26 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"> 
+   </script> 
+   <script>  
+      function download(){ 
+          axios({ 
+              url:'/Samvita_Karkal_Resume.pdf', 
+              method:'GET', 
+              responseType: 'blob' 
+      }) 
+      .then((response) => { 
+             const url = window.URL 
+             .createObjectURL(new Blob([response.data])); 
+                    const link = document.createElement('a'); 
+                    link.href = url; 
+                    link.setAttribute('download', '/Samvita_Karkal_Resume.pdf'); 
+                    document.body.appendChild(link); 
+                    link.click(); 
+      }) 
+      } 
+        
+   </script> 
 </body>
 </html>
