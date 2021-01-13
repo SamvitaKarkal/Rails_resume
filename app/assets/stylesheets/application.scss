@@ -110,11 +110,57 @@
     text-align: justify;
   }
 
+  .contact-details{
+    font-family: Courier, monospace, cursive;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  
+  .fa1 {
+    font-size: 3vm;
+    width: 10%;
+    text-align: center;
+    padding: 1rem 2rem 1rem 1rem;
+    text-decoration: none;
+    border-radius:10%;
+    margin: 5% 7% 5% 7%;
+    color:white;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+      text-decoration: none;
+      color: black;
+  }
+      
+  .social-media-links{
+    margin: auto 2rem auto 5rem;
+    font-size: 2rem;
+  }
+
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 3vm;
+    margin:2rem auto auto auto;
+    margin-bottom: 2rem;
+    font-size:1rem;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
   @media only screen and (max-width: 700px) 
   {
 
     .container-fluid{
-      height:110%;
+      height:105%;
     }
 
     .rsp-break{
@@ -151,7 +197,7 @@
     }
 
     pre{
-      margin-left: 3.2rem;
+      margin-left: 3rem;
     }
 
     .image-fluid{
@@ -163,54 +209,8 @@
     }
 
     .social-media-links{
-      margin: auto auto auto auto;
+      margin: auto 5rem auto 7rem;
       font-size: 2rem;
     }
 
-  }
-
-  .contact-details{
-    font-family: Courier, monospace, cursive;
-    color: black;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-
-  
-  .fa1 {
-    font-size: 3vm;
-    width: 10%;
-    text-align: center;
-    padding: 1rem 1rem 1rem 1rem;
-    text-decoration: none;
-    border-radius:10%;
-    margin: 5% 7% 5% 7%;
-    color:white;
-  }
-
-  .fa:hover {
-      opacity: 0.7;
-      text-decoration: none;
-      color: black;
-  }
-      
-  .social-media-links{
-    margin: auto auto auto 5rem;
-    font-size: 2rem;
-  }
-
-  .btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    cursor: pointer;
-    font-size: 3vm;
-    margin:2rem auto auto auto;
-    margin-bottom: 2rem;
-    font-size:1rem;
-  }
-  
-  /* Darker background on mouse-over */
-  .btn:hover {
-    background-color: RoyalBlue;
   }
